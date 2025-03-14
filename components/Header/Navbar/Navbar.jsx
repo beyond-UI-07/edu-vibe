@@ -7,14 +7,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RiMenu3Line } from "react-icons/ri";
 import { ModeToggle } from "@/components/ModeToggle";
-<<<<<<< HEAD
 
 export const metadata = {
   title: "About",
   description: "this is about page",
 };
-=======
->>>>>>> origin/main
 
 export default function Navbar() {
   const navItems = [
@@ -64,7 +61,6 @@ export default function Navbar() {
           <Button variant={"ghost"}>
             <RiMenu3Line className="text-xl" />
           </Button>
-          <ModeToggle />
         </div>
       </div>
     </nav>
