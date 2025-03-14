@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RiMenu3Line } from "react-icons/ri";
+import { ModeToggle } from "@/components/ModeToggle";
 
 export default function Navbar() {
   const navItems = [
@@ -43,6 +44,7 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="hidden md:flex items-center gap-3">
+          <ModeToggle />
           <Button variant="outline">Login</Button>
           <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
             Sign Up
@@ -53,6 +55,7 @@ export default function Navbar() {
           <Button variant={"ghost"}>
             <RiMenu3Line className="text-xl" />
           </Button>
+          <ModeToggle />
         </div>
       </div>
     </nav>
