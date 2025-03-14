@@ -7,6 +7,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RiMenu3Line } from "react-icons/ri";
 import { ModeToggle } from "@/components/ModeToggle";
+<<<<<<< HEAD
+
+export const metadata = {
+  title: "About",
+  description: "this is about page",
+};
+=======
+>>>>>>> origin/main
 
 export default function Navbar() {
   const navItems = [
@@ -49,6 +57,7 @@ export default function Navbar() {
           <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
             Sign Up
           </Button>
+          <ModeToggle></ModeToggle>
         </div>
         {/* Mobile Menu */}
         <div className="md:hidden">
