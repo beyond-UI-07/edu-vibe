@@ -56,7 +56,6 @@ export default function ContactForm() {
   }
 
   return (
-<<<<<<< HEAD
     <Card className="mx-auto max-w-md my-6">
       <CardHeader>
         <CardTitle>Contact Us</CardTitle>
@@ -142,8 +141,5 @@ export default function ContactForm() {
       </CardContent>
     </Card>
   );
-=======
-    <div>Contact edited by Satyajit 22222</div>
-  )
->>>>>>> 4328876c8e346f78524ada8c84c4bc358ab088b6
+
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import SectionHeading from "../Shared/SectionHeading";
 import Image from "next/image";
-import DetailsFlexSection from "../DetailsFlexSection";
+import WhatDo from "./WhatDo";
 
 export default function About() {
   return (
@@ -50,7 +50,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      
+      <WhatDo />
     </section>
   );
 }

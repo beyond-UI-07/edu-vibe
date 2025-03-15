@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeading from "../SectionHeading/SectionHeading";
+import SectionHeading from "../Shared/SectionHeading";
 import SolutionCard from "./SolutionCard";
 
 export default function Solution() {
