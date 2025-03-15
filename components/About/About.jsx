@@ -8,7 +8,7 @@ export default function About() {
     <section className="container mx-auto py-4 md:py-7 px-3 md:px-10">
       <SectionHeading
         title="What is"
-        titleSecond="EduVibe"
+        titleSecond="EduVibe?"
         description="EduVibe is an innovative online learning platform designed to make education accessible, engaging, and adaptable to your lifestyle. It offers a diverse range of courses taught by experts in various fields. With LearnEase, you can learn at your own pace, interact with fellow learners, and gain valuable skills through practical and interactive lessons."
       />
 
