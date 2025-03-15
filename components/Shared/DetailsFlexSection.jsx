@@ -1,11 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "../ui/button";
 
 export default function DetailsFlexSection({
   title,
   description,
   btnText,
   img,
+  btnStyle2,
   className,
   features, // Array of { icon: string, text: string }
 }) {
@@ -25,6 +27,13 @@ export default function DetailsFlexSection({
           <button className="text-muted-foreground underline mt-3 flex justify-start">
             {btnText}
           </button>
+          {btnStyle2 && (
+            <div className="mt-3 flex justify-start">
+              <Button className="inline-flex w-fit rounded-full border border-secondary-600 bg-transparent text-secondary-600 hover:bg-amber-100 transition-all duration-150">
+                {btnStyle2}
+              </Button>
+            </div>
+          )}
           <ul className="mt-6 space-y-3">
             {features?.map((feature, index) => (
               <li key={index} className="flex items-center gap-5">

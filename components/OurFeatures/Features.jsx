@@ -21,7 +21,7 @@ export default function Features() {
       <ClassManagement />
       <Discussions />
       <div className="flex justify-center -mt-5">
-      <Button className="rounded-full border border-secondary-600 bg-transparent text-secondary-600">See more features</Button>
+      <Button className="rounded-full border border-secondary-600 bg-transparent text-secondary-600 hover:bg-amber-100 transition-all duration-150">See more features</Button>
       </div>
     </div>
   );
