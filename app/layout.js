@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Home",
+  title: "Edu Vibe || Home",
   description: "This is home page ",
 };
 

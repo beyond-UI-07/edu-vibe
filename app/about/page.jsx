@@ -4,7 +4,7 @@ import OurJourney from "@/components/About/OurJourney";
 import React from "react";
 
 export const metadata = {
-  title: "About",
+  title: "Edu Vibe || About",
   description: "This is about page ",
 };
 
