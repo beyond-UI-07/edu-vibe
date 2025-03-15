@@ -1,4 +1,5 @@
 import About from '@/components/About/About';
+import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Integration from '@/components/Integration';
 import Features from '@/components/OurFeatures/Features';
@@ -17,6 +18,7 @@ const LandingPage = () => {
             <Features />
             <Integration />
             <Testimonial />
+            <Footer />
         </div>
     );
 };

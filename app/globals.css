@@ -5,6 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --color-primary-400: #8671F0;
   --color-primary-600: #583CEA;
   --color-secondary-600: #FFC10D;
   --color-primary-100: var(--primary-100);
