@@ -49,7 +49,7 @@ export default function Navbar() {
           ))}
         </ul>
         <div className="hidden md:flex items-center gap-3">
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <Button variant="outline">Login</Button>
           <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
             Sign Up

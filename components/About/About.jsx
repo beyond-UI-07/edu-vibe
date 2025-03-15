@@ -9,7 +9,7 @@ export default function About() {
       <SectionHeading
         title="What is"
         titleSecond="EduVibe"
-        description="LearnEase is an innovative online learning platform designed to make education accessible, engaging, and adaptable to your lifestyle. It offers a diverse range of courses taught by experts in various fields. With LearnEase, you can learn at your own pace, interact with fellow learners, and gain valuable skills through practical and interactive lessons."
+        description="EduVibe is an innovative online learning platform designed to make education accessible, engaging, and adaptable to your lifestyle. It offers a diverse range of courses taught by experts in various fields. With LearnEase, you can learn at your own pace, interact with fellow learners, and gain valuable skills through practical and interactive lessons."
       />
 
       {/* Responsive Grid for Cards */}
@@ -50,17 +50,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <DetailsFlexSection
-        title="Everything you can do in a physical classroom,"
-        secondTitle="you can do with LearnEase"
-        description="With LearnEase, the virtual classroom experience is elevated to
-                  match every aspect of a physical classroom. From engaging
-                  interactions with expert instructors and collaborative discussions
-                  with peers to hands-on projects and personalized learning paths."
-        btnText="Learn more"
-        img="/Group 133.png"
-        imgAlt="Everything you can do in a physical classroom"
-      />
+      
     </section>
   );
 }
