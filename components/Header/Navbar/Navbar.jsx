@@ -28,41 +28,44 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 right-0 left-0 z-50 backdrop-blur-lg">
-      <div className="container mx-auto flex items-center justify-between py-3 px-3 md:px-10">
-        {" "}
-        {/* Logo */}
-        <div>
-          <Image src={logo} className="w-44 md:w-52" alt="Company Logo" />
+    <>
+      <nav className="fixed top-0 right-0 left-0 z-50 backdrop-blur-md">
+        <div className="container mx-auto flex items-center justify-between py-3 px-3 md:px-10">
+          {" "}
+          {/* Logo */}
+          <div>
+            <Image src={logo} className="w-44 md:w-52" alt="Company Logo" />
+          </div>
+          {/* Menu */}
+          <ul className="hidden md:flex items-center gap-7">
+            {navItems.map((item, index) => (
+              <li
+                className="hover:text-primary-600 transition-all duration-150"
+                key={index}
+              >
+                <Link href={item.href} className={isActive(item.href)}>
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="hidden md:flex items-center gap-3">
+            {/* <ModeToggle /> */}
+            <Button variant="outline">Login</Button>
+            <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
+              Sign Up
+            </Button>
+            <ModeToggle></ModeToggle>
+          </div>
+          {/* Mobile Menu */}
+          <div className="md:hidden">
+            <Button variant={"ghost"}>
+              <RiMenu3Line className="text-xl" />
+            </Button>
+          </div>
         </div>
-        {/* Menu */}
-        <ul className="hidden md:flex items-center gap-7">
-          {navItems.map((item, index) => (
-            <li
-              className="hover:text-primary-600 transition-all duration-150"
-              key={index}
-            >
-              <Link href={item.href} className={isActive(item.href)}>
-                {item.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="hidden md:flex items-center gap-3">
-          {/* <ModeToggle /> */}
-          <Button variant="outline">Login</Button>
-          <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
-            Sign Up
-          </Button>
-          <ModeToggle></ModeToggle>
-        </div>
-        {/* Mobile Menu */}
-        <div className="md:hidden">
-          <Button variant={"ghost"}>
-            <RiMenu3Line className="text-xl" />
-          </Button>
-        </div>
-      </div>
-    </nav>
+      </nav>
+      <div className="pb-20 h-[75px]"></div>
+    </>
   );
 }

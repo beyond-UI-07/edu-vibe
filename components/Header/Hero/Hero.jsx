@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="container mx-auto">
-      <div className="flex flex-col lg:flex-row items-center justify-between py-4 md:py-7 px-4 md:px-10 md:mt-10">
+      <div className="flex flex-col lg:flex-row items-center justify-between py-4 md:py-7 px-4 md:px-10">
         {" "}
         {/* Hero Heading */}
         <div className="lg:w-4/5 mt-10 lg:0">
