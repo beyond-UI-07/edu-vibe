@@ -6,9 +6,12 @@
 
 @theme inline {
   --color-primary-400: #8671F0;
+  --color-primary-300: #8671F0;
+  --color-primary-200: #A495F4;
+  --color-primary-50: #F5F3FE;
+  --color-primary-100: #EAE7FC;
   --color-primary-600: #583CEA;
   --color-secondary-600: #FFC10D;
-  --color-primary-100: var(--primary-100);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -50,7 +53,6 @@
 }
 
 :root {
-  --primary-100: #F0EDFD;
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
   --card: oklch(1 0 0);

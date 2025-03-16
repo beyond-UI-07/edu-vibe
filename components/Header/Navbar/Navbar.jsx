@@ -20,16 +20,19 @@ export default function Navbar() {
     { name: "Services", href: "/services" },
     { name: "Contact", href: "/contact" },
   ];
+  const pathName = usePathname(); // Get current pathname in Next.js
   const isActive = (path) => {
-    const pathName = usePathname(); // Get current pathname in Next.js
     return pathName === path
       ? "text-primary-600 font-semibold"
       : "dark:text-white font-light hover:text-primary-600 transition-all hover:font-semibold duration-150";
   };
 
+  const isHome = pathName === "/"
+  
+
   return (
     <>
-      <nav className="fixed top-0 right-0 left-0 z-50 backdrop-blur-md">
+      <nav className="fixed top-0 right-0 left-0 z-50 backdrop-blur-sm">
         <div className="container mx-auto flex items-center justify-between py-3 px-3 md:px-10">
           {" "}
           {/* Logo */}
@@ -65,7 +68,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="pb-20 h-[75px]"></div>
+      <div className={`h-[75px] ${isHome&& 'bg-primary-100'}`}></div>
     </>
   );
 }
