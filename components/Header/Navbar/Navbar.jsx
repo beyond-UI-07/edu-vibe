@@ -28,7 +28,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-10 bg-primary-100/70 backdrop-blur-lg">
+    <nav className="fixed top-0 right-0 left-0 z-50 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between py-3 px-3 md:px-10">
         {" "}
         {/* Logo */}
