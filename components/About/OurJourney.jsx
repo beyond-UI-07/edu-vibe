@@ -6,11 +6,9 @@ import Image from 'next/image';
 const OurJourney = () => {
     return (
         <div>
-            <SectionHeading
-                title="Our"
-                titleSecond="Journey"
-                description=""
-            />
+             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-primary-600 text-center py-10">
+                      Our <span className='text-secondary-600'>Journey</span>
+                    </h2>
 
             {/* mission  */}
             <div className='flex flex-col lg:flex-row gap-12'>
@@ -21,7 +19,7 @@ const OurJourney = () => {
                     </h1>
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-primary-600">
                         Transforming life
-                        <span className="text-secondary-600"> through education</span>
+                         through education
                     </h2>
                     <p className="mt-4 text-lg text-muted-foreground">We believe that everyone deserves the chance to learn and grow, no matter where they are in life. Our mission is to remove barriers to education, making it accessible to anyone with a desire to learn.</p>
                     <div className='py-5'>
