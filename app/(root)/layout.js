@@ -1,7 +1,10 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import ThemeProvider from "../components/theme-provider";
+import "../globals.css";
+
 import Navbar from "@/components/Header/Navbar/Navbar";
+import ThemeProvider from "@/components/theme-provider";
+import Footer from "@/components/Footer/Footer";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +39,9 @@ export default function RootLayout({ children }) {
           </div>
           {/* outlet part to render the dynamic page */}
           <main>{children}</main>
+          <div>
+            <Footer/>
+          </div>
         </ThemeProvider>
       </body>
     </html>
