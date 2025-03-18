@@ -190,17 +190,35 @@ export default function ContactForm() {
     },
   });
 
+  // async function onSubmit(values) {
+  //   setIsSubmitting(true);
+  //   try {
+  //     console.log("Submitted Data:", values);
+  //     await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate API call
+  //   } catch (error) {
+  //     console.error("Submission failed", error);
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // }
   async function onSubmit(values) {
-    setIsSubmitting(true);
     try {
-      console.log("Submitted Data:", values);
-      await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate API call
+        const response = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(values),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            alert("Message sent successfully!");
+        } else {
+            alert(result.message || "Something went wrong!");
+        }
     } catch (error) {
-      console.error("Submission failed", error);
-    } finally {
-      setIsSubmitting(false);
+        console.error("Submission failed", error);
     }
-  }
+}
 
   return (
     <div className="container mx-auto px-4 py-10">
@@ -282,15 +300,31 @@ export default function ContactForm() {
             <h3 className="text-blue-700 text-xl font-semibold mb-4">Our Office</h3>
             <div className="flex items-center space-x-3 mb-3">
               <MapPin className="text-blue-600" />
-              <p>123 Blue Street, Suite 456, New York, NY 10001</p>
+              <p>35, New Market, GPO-4000, Chattogram, Bangladesh</p>
             </div>
             <div className="flex items-center space-x-3 mb-3">
               <Phone className="text-blue-600" />
-              <p>+1 (555) 123-4567</p>
+              <p>+8801911199697</p>
+            </div>
+            <div className="flex items-center space-x-3 mb-3">
+              <Phone className="text-blue-600" />
+              <p>+8801819864771</p>
+            </div>
+            <div className="flex items-center space-x-3 mb-3">
+              <Phone className="text-blue-600" />
+              <p>+8801779657708</p>
+            </div>
+            <div className="flex items-center space-x-3 mb-3">
+              <Phone className="text-blue-600" />
+              <p>+8801817397967</p>
+            </div>
+            <div className="flex items-center space-x-3 mb-3">
+              <Phone className="text-blue-600" />
+              <p>+8801742982184</p>
             </div>
             <div className="flex items-center space-x-3">
               <Mail className="text-blue-600" />
-              <p>contact@yourcompany.com</p>
+              <p>beyond.ui1007@gmail.com</p>
             </div>
           </div>
         </CardContent>
