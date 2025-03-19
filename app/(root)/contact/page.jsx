@@ -299,7 +299,6 @@ export default function ContactForm() {
           <div className="bg-primary-100 p-6 rounded-lg">
             <h3 className="text-primary-600 text-xl font-semibold mb-4">Our Office</h3>
             <div className="flex items-center space-x-3 mb-3">
-<<<<<<< HEAD:app/contact/page.jsx
               <MapPin className="text-blue-600" />
               <p>35, New Market, GPO-4000, Chattogram, Bangladesh</p>
             </div>
@@ -323,21 +322,10 @@ export default function ContactForm() {
               <Phone className="text-blue-600" />
               <p>+8801742982184</p>
             </div>
-            <div className="flex items-center space-x-3">
-              <Mail className="text-blue-600" />
-              <p>beyond.ui1007@gmail.com</p>
-=======
-              <MapPin className="text-primary-600" />
-              <p>123 Blue Street, Suite 456, New York, NY 10001</p>
-            </div>
-            <div className="flex items-center space-x-3 mb-3">
-              <Phone className="text-primary-600" />
-              <p>+1 (555) 123-4567</p>
-            </div>
+            
             <div className="flex items-center space-x-3">
               <Mail className="text-primary-600" />
-              <p>contact@yourcompany.com</p>
->>>>>>> c01d46e3e1f5541b09cc7aff4b736872936d4358:app/(root)/contact/page.jsx
+              <p>beyond.ui1007@gmail.com</p>
             </div>
           </div>
         </CardContent>
