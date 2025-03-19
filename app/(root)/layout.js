@@ -1,8 +1,14 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import ThemeProvider from "../components/theme-provider";
+import "../globals.css";
+
 import Navbar from "@/components/Header/Navbar/Navbar";
+<<<<<<< HEAD:app/layout.js
 import Footer from "@/components/Footer/Footer";
+=======
+import ThemeProvider from "@/components/theme-provider";
+import Footer from "@/components/Footer/Footer";
+
+>>>>>>> c01d46e3e1f5541b09cc7aff4b736872936d4358:app/(root)/layout.js
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,9 +43,15 @@ export default function RootLayout({ children }) {
           </nav>
           {/* outlet part to render the dynamic page */}
           <main>{children}</main>
+<<<<<<< HEAD:app/layout.js
 
             <Footer />
 
+=======
+          <div>
+            <Footer/>
+          </div>
+>>>>>>> c01d46e3e1f5541b09cc7aff4b736872936d4358:app/(root)/layout.js
         </ThemeProvider>
       </body>
     </html>

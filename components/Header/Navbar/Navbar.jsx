@@ -19,6 +19,7 @@ export default function Navbar() {
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Contact", href: "/contact" },
+    { name: "Dashboard", href: "/dashboard" },
   ];
   const pathName = usePathname(); // Get current pathname in Next.js
   const isActive = (path) => {
