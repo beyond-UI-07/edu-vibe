@@ -221,11 +221,11 @@ export default function ContactForm() {
 }
 
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto py-4 md:py-7 px-3 md:px-10">
       {/* Contact Information Section */}
-      <Card className="mx-auto max-w-4xl bg-blue-50 border border-blue-300 shadow-lg">
+      <Card className="mx-auto max-w-4xl bg-primary-50 border border-primary-200 shadow-lg">
         <CardHeader className="text-center">
-          <CardTitle className="text-blue-600 text-2xl">Contact Us</CardTitle>
+          <CardTitle className="text-primary-600 text-2xl">Contact Us</CardTitle>
           <CardDescription>We'd love to hear from you. Get in touch today!</CardDescription>
         </CardHeader>
 
@@ -288,7 +288,7 @@ export default function ContactForm() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700" disabled={isSubmitting}>
+                <Button type="submit" className="w-full bg-primary-600 hover:bg-primary-400" disabled={isSubmitting}>
                   {isSubmitting ? "Submitting..." : "Submit"}
                 </Button>
               </form>
@@ -296,9 +296,10 @@ export default function ContactForm() {
           </div>
 
           {/* Address & Contact Details */}
-          <div className="bg-blue-100 p-6 rounded-lg">
-            <h3 className="text-blue-700 text-xl font-semibold mb-4">Our Office</h3>
+          <div className="bg-primary-100 p-6 rounded-lg">
+            <h3 className="text-primary-600 text-xl font-semibold mb-4">Our Office</h3>
             <div className="flex items-center space-x-3 mb-3">
+<<<<<<< HEAD:app/contact/page.jsx
               <MapPin className="text-blue-600" />
               <p>35, New Market, GPO-4000, Chattogram, Bangladesh</p>
             </div>
@@ -325,6 +326,18 @@ export default function ContactForm() {
             <div className="flex items-center space-x-3">
               <Mail className="text-blue-600" />
               <p>beyond.ui1007@gmail.com</p>
+=======
+              <MapPin className="text-primary-600" />
+              <p>123 Blue Street, Suite 456, New York, NY 10001</p>
+            </div>
+            <div className="flex items-center space-x-3 mb-3">
+              <Phone className="text-primary-600" />
+              <p>+1 (555) 123-4567</p>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Mail className="text-primary-600" />
+              <p>contact@yourcompany.com</p>
+>>>>>>> c01d46e3e1f5541b09cc7aff4b736872936d4358:app/(root)/contact/page.jsx
             </div>
           </div>
         </CardContent>
