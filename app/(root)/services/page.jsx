@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function services() {
-  return <div>services</div>;
+  return <div>services to be updated satyajit</div>;
 }
