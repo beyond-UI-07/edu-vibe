@@ -28,8 +28,7 @@ export default function Navbar() {
       : "dark:text-white font-light hover:text-primary-600 transition-all hover:font-semibold duration-150";
   };
 
-  const isHome = pathName === "/"
-  
+  const isHome = pathName === "/";
 
   return (
     <>
@@ -55,10 +54,14 @@ export default function Navbar() {
           </ul>
           <div className="hidden md:flex items-center gap-3">
             {/* <ModeToggle /> */}
-            <Button variant="outline">Login</Button>
-            <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
-              Sign Up
-            </Button>
+            <Link href="/login">
+              <Button variant="outline">Login</Button>
+            </Link>
+            <Link href="/create-account">
+              <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
+                Sign Up
+              </Button>
+            </Link>
             <ModeToggle></ModeToggle>
           </div>
           {/* Mobile Menu */}
@@ -69,7 +72,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className={`h-[75px] ${isHome&& 'bg-primary-100'}`}></div>
+      <div className={`h-[75px] ${isHome && "bg-primary-100"}`}></div>
     </>
   );
 }
