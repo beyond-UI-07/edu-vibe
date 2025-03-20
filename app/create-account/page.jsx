@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { useSignUp } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function SignUpPage() {
-  const {} = useSignUp()
   return (
     <div className="container mx-auto py-4 md:py-7 px-3 md:px-10">
       <div className="flex flex-col md:flex-row justify-between gap-8 py-6">
