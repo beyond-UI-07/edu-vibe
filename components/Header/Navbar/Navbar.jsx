@@ -17,7 +17,7 @@ export default function Navbar() {
   const navItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Services", href: "/services" },
+    { name: "Courses", href: "/courses" },
     { name: "Contact", href: "/contact" },
     { name: "Dashboard", href: "/dashboard" },
   ];
@@ -29,6 +29,7 @@ export default function Navbar() {
   };
 
   const isHome = pathName === "/";
+  
 
   return (
     <>
@@ -54,14 +55,10 @@ export default function Navbar() {
           </ul>
           <div className="hidden md:flex items-center gap-3">
             {/* <ModeToggle /> */}
-            <Link href="/login">
-              <Button variant="outline">Login</Button>
-            </Link>
-            <Link href="/create-account">
-              <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
-                Sign Up
-              </Button>
-            </Link>
+            <Button variant="outline">Login</Button>
+            <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
+              Sign Up
+            </Button>
             <ModeToggle></ModeToggle>
           </div>
           {/* Mobile Menu */}
@@ -72,7 +69,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className={`h-[75px] ${isHome && "bg-primary-100"}`}></div>
+      <div className={`h-[75px] ${isHome&& 'bg-primary-100'}`}></div>
     </>
   );
 }
