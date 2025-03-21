@@ -31,7 +31,7 @@ export default function MainLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
-            <main>{children}</main>
+            {children}
           </ThemeProvider>
         </body>
       </html>
