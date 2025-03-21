@@ -3,4 +3,5 @@
   publish = ".next"
 
 [build.environment]
-  TAILWIND_DISABLE_OXIDE = "1"
+NPM_FLAGS = "--no-optional"
+
