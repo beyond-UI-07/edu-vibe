@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { RiMenu3Line } from "react-icons/ri";
 import { ModeToggle } from "@/components/ModeToggle";
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/nextjs";
 
 export const metadata = {
   title: "About",
@@ -54,14 +55,20 @@ export default function Navbar() {
           </ul>
           <div className="hidden md:flex items-center gap-3">
             {/* <ModeToggle /> */}
-            <Link href="/login">
-              <Button variant="outline">Login</Button>
-            </Link>
-            <Link href="/create-account">
-              <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
-                Sign Up
-              </Button>
-            </Link>
+            <SignedOut>
+              <SignInButton>
+                <Button variant="outline">Login</Button>
+              </SignInButton>
+              <SignUpButton>
+                <Button className="bg-primary-600 hover:bg-primary-600 dark:text-white">
+                  Sign Up
+                </Button>
+              </SignUpButton>
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+
             <ModeToggle></ModeToggle>
           </div>
           {/* Mobile Menu */}
